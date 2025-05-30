@@ -82,7 +82,7 @@ const CartDetails = () => {
     };
 
     const response = await fetch(
-      `${process.env.REACT_APP_BACKEND_URL}/api/create-checkout-session`,
+      `https://paymentintegrationbackend.vercel.app/api/create-checkout-session`,
       {
         method: "POST",
         headers: headers,
